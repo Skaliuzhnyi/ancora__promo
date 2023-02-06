@@ -181,7 +181,7 @@ function subMenuToShow() {
 
 
       if (!isOpened) {
-
+        $(currentParent).toggleClass(openedClass);
         $(currentParent).children('.bracing-sub-menu__text').slideDown(500);
         $(currentParentChildren).children('.bracing-sub-menu__item-arrow').addClass(openedClass);
       } else {
